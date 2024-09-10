@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "totebackstage"
+  annotations:
+    github.com/project-slug: totebackstage/infra
+    backstage.io/techdocs-ref: dir:.
+    github.com/workflows: terraform-project-devops-playground.yaml
+  title: 'totebackstage' 
+  description: Component for Google Cloud Infra creation through Terraform (using Backstage) (actions destroy,create,terraform state refresh)
+spec:
+  type: service
+  owner: user:guest
+  lifecycle: experimental
